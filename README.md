@@ -1,4 +1,4 @@
-  # Gestión de Comunidad de Cursos
+  # CommunityCoursesIT
 
 > WebApp de gestión de comunidad de cursos: catálogo comunitario de cursos gratuitos
 > + roadmaps personales de aprendizaje.
