@@ -1,4 +1,4 @@
-# BackendSchema — Esquema de base de datos y APIs — [Nombre del producto]
+g# BackendSchema — Esquema de base de datos y APIs — [Nombre del producto]
 
 > **Qué es:** el contrato del backend: modelo de datos en PostgreSQL + superficie de API REST.
 > Es lo que hace posible el TRD y lo que consume el APPFlow.
