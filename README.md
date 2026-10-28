@@ -35,6 +35,33 @@
   texto crudo, falta el bloque ` ```mermaid `.
 - Preview local: VS Code con `Ctrl+Shift+V` (extensión "Markdown All in One" recomendada).
 
+## Como levantar el proyecto
+
+1. **Clonar el repositorio:**
+'''<br>
+bash <br>
+git clone https://github.com/fesperanza/gestion-cursos-comunidad.git <br>
+cd gestion-cursos-comunidad <br>
+'''
+
+2. **Instalar dependencias:**
+''' <br>
+bash <br>
+pnpm install <br>
+'''
+
+3. **Configurar variables de entorno:**
+''' <br>
+bash <br>
+cp .env.example .env <br>
+'''
+
+4. **Levantar el proyecto:**
+''' <br>
+bash <br>
+docker compose up <br>
+'''
+
 ## Estado del trabajo
 
 | Instancia | Contenido | Estado |
