@@ -35,6 +35,8 @@
   texto crudo, falta el bloque ` ```mermaid `.
 - Preview local: VS Code con `Ctrl+Shift+V` (extensión "Markdown All in One" recomendada).
 
+## Como levantar el proyecto
+
 ## Estado del trabajo
 
 | Instancia | Contenido | Estado |
