@@ -35,6 +35,11 @@
   texto crudo, falta el bloque ` ```mermaid `.
 - Preview local: VS Code con `Ctrl+Shift+V` (extensión "Markdown All in One" recomendada).
 
+## Como levantar el proyecto
+1. Clonar el repositorio: \`git clone <tu-repo>\`
+2. Configurar variables de entorno: \`cp .env.example .env\`"
+3. Levantar los servicios: \`docker compose up\`"
+
 ## Estado del trabajo
 
 | Instancia | Contenido | Estado |
@@ -78,3 +83,6 @@
 ## Licencia / uso
 
 Trabajo Práctico — Desarrollo de Software, UTN FR La Plata, 2026.
+
+# frontend: http://localhost:5173
+# backend: http://localhost:8000/health

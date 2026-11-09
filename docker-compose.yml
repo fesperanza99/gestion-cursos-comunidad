@@ -1,0 +1,30 @@
+services:
+  postgres:
+    image: postgres:18.6 # Usa la versión exacta de la base de datos que pide la consigna.
+    ports:
+      - "5432:5432" # Expone el puerto para que puedas ver la base de datos desde tu PC.
+    environment:
+      POSTGRES_USER: postgres # Usuario por defecto.
+      POSTGRES_PASSWORD: postgres # Contraseña por defecto[cite: 5].
+      POSTGRES_DB: community_courses # Nombre de la base de datos[cite: 5].
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Guarda los datos en un "volumen" para no perderlos si se apaga[cite: 5].
+
+  backend:
+    build: ./backend # Le dice a Docker que construya este servicio leyendo el Dockerfile de la carpeta backend[cite: 5].
+    ports:
+      - "8000:8000" # Expone el puerto del backend[cite: 5].
+    depends_on:
+      - postgres # Se asegura de que la base de datos prenda antes que el backend[cite: 5].
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/community_courses # Conecta el backend con la BD[cite: 5].
+
+  frontend:
+    build: ./frontend # Le dice a Docker que construya leyendo el Dockerfile de la carpeta frontend[cite: 5].
+    ports:
+      - "5173:5173" # Expone el puerto de Vite (React)[cite: 5].
+    depends_on:
+      - backend # Se asegura de que el backend prenda antes que el frontend[cite: 5].
+
+volumes:
+  postgres_data: # Define el volumen nombrado que usamos en el servicio postgres[cite: 5].
