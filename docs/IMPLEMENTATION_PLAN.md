@@ -1,4 +1,4 @@
-# Implementation Plan — [Nombre del producto]
+# Implementation Plan — CommunityCoursesIT
 
 > **Qué es:** el orden de construcción. Módulos, dependencias, tareas con su definición de hecho
 > y estimaciones. Es lo que ejecutás en la Instancia B, tarea por tarea, rama por rama.
@@ -86,10 +86,10 @@ flowchart LR
 
 | # | Tarea | Módulo | Estado | Rama / Commit |
 |---|-------|--------|--------|---------------|
-| 0.1 | Estructura de carpetas | M0 | [ ] | `chore/repo-setup` |
-| 0.2 | docker-compose postgres | M0 | [ ] | `docker/db-setup` |
-| 0.3 | Backend FastAPI mínimo | M0 | [ ] | `feat/backend-health` |
-| 0.4 | Frontend Vite + React shell | M0 | [ ] | `feat/frontend-shell` |
+| 0.1 | Estructura de carpetas | M0 | [x] | `chore/repo-setup` |
+| 0.2 | docker-compose postgres | M0 | [x] | `docker/db-setup` |
+| 0.3 | Backend FastAPI mínimo | M0 | [x] | `feat/backend-health` |
+| 0.4 | Frontend Vite + React shell | M0 | [x] | `feat/frontend-shell` |
 | 1.1 | Endpoints auth | M1 | [ ] | `feat/auth-jwt` |
 
 ## 5. Estrategia de testing
